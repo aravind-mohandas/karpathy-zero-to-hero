@@ -1,7 +1,7 @@
 # Neural Networks: Zero to Hero 🚀
 
 This repository contains my implementations and notes from Andrej Karpathy’s *Neural Networks: Zero to Hero* lecture series.  
-The goal is to deeply understand how modern neural networks work — by building everything from scratch, step by step.
+The goal is to deeply understand how modern neural networks and Large Language Models work — by building everything from scratch, step by step.
 
 ---
 
@@ -10,11 +10,12 @@ The goal is to deeply understand how modern neural networks work — by building
 The series covers the full journey from the foundations of automatic differentiation to building a GPT-style transformer model.
 
 | Module | Description |
-|--------|--------------|
+|--------|-------------|
 | **micrograd/** | A tiny autograd engine and a small neural net library built from scratch. |
 | **makemore/** | Character-level language models (bigram, MLP, and simple neural nets). |
-| **minGPT/** | A minimal GPT implementation with attention, layer normalization, and training loops. |
-| **notes.md** | My takeaways and key concepts from each lecture. |
+| **nanogpt/** | An implementation of the decoder only architecture based on "Attention is All you Need". |
+| **tokenizer/** | Tokenization utilities: encode/decode logic, vocabulary building, and preprocessing. |
+| **gpt2/** | A GPT-style transformer implementation with attention, layer normalization, and training loops. |
 
 ---
 
@@ -31,6 +32,12 @@ The series covers the full journey from the foundations of automatic differentia
 - PyTorch (for parts where abstraction helps)  
 - NumPy  
 - Jupyter Notebooks  
+
+---
+
+## 📝 TODO
+- Move code from notebooks into cleaner executable modules (`src/` structure)  
+- Complete all side missions and bonus exercises suggested by Karpathy  
 
 ---
 
